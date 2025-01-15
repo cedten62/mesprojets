@@ -1,0 +1,143 @@
+body
+{
+	background-image: url("image/fond.jpg");
+	background-size: 100%;
+}
+
+#navbar
+{
+	position: sticky;
+	top: 5px;
+	overflow: hidden;
+	background-color: white;
+	border-style: outset;
+	border-width: 5px;
+	border-color: blue;
+	border-radius: 20px;
+}
+
+#navbar a
+{
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+}
+
+h1
+{
+	text-align: center;
+	color: white;
+	text-decoration: underline;
+}
+
+h2
+{
+	margin-top: 30px;
+	margin-left: 40px;
+	color: white;
+}
+
+h3
+{
+	color: black;
+	text-align: center;
+}
+
+section
+{
+	padding: 10px;
+	width:30%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px;
+	color: white;
+	text-align: center;
+}
+
+.projets
+{
+	padding: 10px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: blue;
+	border-radius: 20px;
+}
+
+.projets_encours
+{
+	padding: 10px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: red;
+	border-radius: 20px;
+}
+
+.close_button
+{
+	border: none;
+	background: none;
+	float: right;
+	padding-right: 20px;
+	color: red;
+	font-weight: 900;
+	font-size: 40px;
+}
+
+.descr_projets
+{
+	position: fixed;
+	top: 80px;
+	display: none;
+	background-color: white;
+	border-style: outset;
+	border-width: 5px;
+	border-color: blue;
+	border-radius: 20px;
+	width: 98%;
+	overflow: auto;
+	scrollbar-width: none;
+	bottom: 10px;
+}
+
+.descr_projets h3
+{
+	font-size: 28px;
+}
+
+.descr_projets p
+{
+	margin: 20px;
+	right: 20px;
+	font-size: 20px;
+}
+
+.descr_projets img
+{
+	margin: 20px;
+	background-color: white;
+	border-style: outset;
+	border-width: 5px;
+	border-color: blue;
+	border-radius: 20px;
+	float: right;
+}
+
+body.modal-open 
+{
+	overflow: hidden;
+}
+
+#cv
+{
+	margin : 30px;
+	line-height : 1.5;
+}
+
+#cv li
+{
+	color: white;
+	font-size: 20px;
+}
