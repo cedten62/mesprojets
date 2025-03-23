@@ -1,0 +1,295 @@
+ <!DOCTYPE html> 
+<html lang="fr"> 
+<html> 
+
+<head> 
+<meta charset="utf-8"> 
+<title>Mon site</title> 
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+ 
+<body> 
+
+<div id="navbar">
+  <a href="accueil.html">Accueil</a>
+  <a href="#python">Python</a>
+  <a href="#unity">Unity</a>
+  <a href="#sql">SQL</a>
+  <a href="#html">HTML</a>
+  <a href="#autres">Autres</a>
+  <a href="moi.html">A propos de moi</a>
+</div>
+
+<div class="descr_projets" id="morpion">
+<button class="close_button" onclick="closeMorpion()">X</button>
+<h3>Morpion</h3>
+<img src='image\morpion-numworks.png' alt='morpion sur numworks' height="500px">
+<p>&emsp;Ce jeux de morpion est utilisable sur les calculatrices Numworks.
+</br>&emsp;Il utilise le langage python et plus précisement les modules kandinsky et ion qui sont 2 modules déjà disponible sur la calculatrice.
+ Le module kandinsky permet de creer l'interface graphique et ion permet de détecter quand une touche est pressée.
+ </br></br>&emsp;Le script est assez simple et tient en 243 lignes.
+ </br>&emsp;Chaque case du morpion a une variable qui est égale à 0 quand elle est libre, cette variable devient 1 quand la case est prise par le
+ joueur rouge ou 2 si c'est le joueur bleu qui la prend.
+ </br>&emsp;Pour cela, le script regarde quelle touche est appuyée, regarde si la case correspondante à la touche a une variable égale à 0, si
+ c'est le cas, il met un rectangle de la couleur du joueur à l'endroit de la case et change la valeur de la variable.
+ </br>&emsp;Ensuite, à chaque fois qu'un joueur a pris une case, le programme compare toutes les possibilités de victoire avec les valeurs des
+ variables actuelles, s'il constate une victoire, il affiche le gagnant.
+ </br>&emsp;Enfin, s'il voit que toutes les cases sont prises, il affiche match nul.</p>
+</div>
+
+<div class="descr_projets" id="p4">
+<button class="close_button" onclick="closeP4()">X</button>
+<h3>Puissance 4</h3>
+<img src='image\p4-numworks.png' alt='puissance4 sur numworks' height="500px">
+<p>&emsp;Ce puissance 4 a été réalisé dans le but d'être utilisable sur la calculatrice Numworks.
+</br>&emsp;Il a été programmé en python grâce aux modules ion, kandinsky.
+ Le module kandinsky gère la partie graphique et ion détecte les touches pressées.
+ </br></br>&emsp;C'est un script de 118 lignes réalisé sur omega IDE.
+ </br>&emsp;Le plateau est représenté sous la forme d'un tableau où chaque case est égale à 0 si elle est vide, 1 si elle est prise par le
+ joueur bleu et 2 par le joueur rouge.
+ </br>&emsp;Au début de la partie, le script regarde si l'une des flèches est apuyée, pour décaller le curseur.
+ Si on presse la touche 'OK', le script analyse chaque ligne de la colonne à partant du bas jusqu'à trouver une case vide (s'il y en a une).
+ Quand il a trouvé cette case, il actualise le tableau représentant le plateau et met un rectangle de la couleur du joueur grâce à kandinsky.
+ </br>&emsp;Ensuite, le script analyse toutes les possibilités de victoire avec l'état du plateau actuel, si une condition de victoire est
+ trouvée, il affiche le gagnant.
+ </br>&emsp;Enfin, s'il voit que toutes les cases sont prises, il affiche match nul.</p>
+</div>
+
+<div class="descr_projets" id="simon">
+<button class="close_button" onclick="closeSimon()">X</button>
+<h3>Simon</h3>
+<img src='image\simon-tkinter.png' alt='simon' height="500px">
+<p>&emsp;Ce projet de simon est une amélioration d'un exercice effectué en NSI qui consisté à faire un simon dans la console en utilisant les files.
+ </br>&emsp;Il utilise les modules tkinter pour creer l'interface et random pour choisir les couleurs aléatoirement.
+ </br></br>&emsp;Le script fait 124 lignes avec une partie pour creer le simon sur tkinter et une partie avec les fonctions qui permettent son
+ fonctionnement.
+ </br>&emsp;Les 4 cases colorées sont des boutons qui appellent une fonction saisie qui permet au script de savoir quelle couleur le joueur a
+ sélectionné.
+ </br>&emsp;Le programme appelle succesivement une fonction qui fait clignoter les boutons a appuyer contenus dans une file et ajoute une
+ couleur à chaque tour et une fonction qui compare la saisie du joueur avec la suite demandée stockée dans une file.
+ </br>&emsp;Enfin, si le joueur commet une erreur, la file se vide et le jeu recommence.</p>
+</div>
+
+<div class="descr_projets" id="banque">
+<button class="close_button" onclick="closeBanque()">X</button>
+<h3>Banque</h3>
+<img src='image\banque.jpg' alt='banque' height="500px">
+<p>EN COURS</p>
+</div>
+
+<div class="descr_projets" id="rpg">
+<button class="close_button" onclick="closeRpg()">X</button>
+<h3>Rpg</h3>
+<img src='image\rpg-unity.png' alt='rpg-unity' height="500px">
+<p>&emsp;Ce jeu est mon tout premier projet sur unity, il m'a permis de prendre en main les différents outils et de comprendre le fonctionnement
+ des moteurs de jeu.
+ </br></br>&emsp;Le jeu est composé de 2 scènes différentes, une scène pour lancer le jeu et le jeu.
+ </br>&emsp;La scène de lancement est assez simple avec un bouton pour lancer la partie et un bouton pour quitter.
+ </br></br>&emsp;La scène de jeu est composée de différentes choses, il y a des props qui ont tous une boite de collision et une zone de détection un
+ peu plus bas que l'objet en lui-même afin d'adapter le layer du personnage pour qu'il soit devant ou derrière l'objet.
+ </br>&emsp;La scène a également un menu pause que l'on peut ouvrir en apuyant sur échap, cela permet d'arrêter le temps.
+ </br>&emsp;Le joueur dispose d'un inventaire qu'il peut ouvrir en appyant sur "E". Il fonctionne avec une liste qui stocke des scriptable objects
+ "items" qui ont un id, un nom, une description et une image afin que le joueur puisse voir son inventaire.
+ </br>&emsp;Sur la carte, il y a également un pnj qui permet de récupérer une quête, quand le joueur s'approche de lui, une boite de dialogue
+ apparait et demande au joueur d'aller ouvrir le coffre. La quête se met donc dans la liste des quêtes en cours que l'on peut voir en haut à
+ gauche de l'image.
+ </br>&emsp;Une fois à côté du coffre, le joueur peut faire un clic droit ce qui va permettre d'ouvrir le coffre. Un diamant va alors arriver dans
+ l'inventaire du joueur.
+ </p>
+</div>
+
+<div class="descr_projets" id="rpg2">
+<button class="close_button" onclick="closeRpg2()">X</button>
+<h3>Rpg 2</h3>
+<img src='image\rpg2-unity.png' alt='rpg2-unity' height="500px">
+<p>EN COURS</p>
+</div>
+
+<div class="descr_projets" id="mdp">
+<button class="close_button" onclick="closeMdp()">X</button>
+<h3>Sécurité d'un mot de passe</h3>
+<img src='image\mdp.jpg' alt='tableau de sécurité de mot de passe' height="500px">
+<p>&emsp;Ce programme a été fait en python. Il permet de déterminer la sécurité d'un mot de passe sur les mêmes critères que le tableau ci-contre.
+</br></br>&emsp;Il commence par analyser le mot de passe caractère par caractère afin de déterminer le nombre de chiffres, de minuscules, de
+ majuscules et de caractères spéciaux.
+</br>&emsp;Ensuite, le script compare les résultats obtenus avec les conditions, que vous pouvez voir sur le tableau ci-contre, pour indiquer à
+ l'utilisateur la force de son mot de passe.</p>
+</div>
+
+<div class="descr_projets" id="2048">
+<button class="close_button" onclick="close2048()">X</button>
+<h3>2048</h3>
+<img src='image\2048-tkinter.png' alt='2048' height="500px">
+<p>&emsp;Ce 2048 a été réalisé en python à l'aide du module tkinter qui permet de créer une interface graphique.
+</br></br>&emsp;Le script du jeu fait 172 lignes avec tout d'abord, la création de l'interface, puis l'initialisation des variables nécessaires
+ et enfin les fonctions qui permettent le fonctionnement du jeu.
+ </br>&emsp;La création de l'interface ce fait avec des rectangles noirs qui permettent de délimiter les cases.
+ </br>&emsp;Un tableau ne contenant que des 'None' est créé pour représenter les cases du jeu.
+ </br>&emsp;Ensuite, viennent les fonctions, la première est spawn() qui permet de mettre un bloc 2 sur une case vide aléatoirement.
+ </br>&emsp;La seconde est verif() qui met les bonnes images de bloc grâce aux valeurs contenues dans la tableau.
+ </br>&emsp;Les 4 suivantes permettent de déplacer les blocs quand l'utilisateur appuie sur les flèches, elles changent les valeurs du tableau
+ en fonction des places disponibles, elles regardent si 2 blocs de la même valeur se retrouve à côté afin de les transformer en 1 bloc supérieur
+ et enfin, elles appellent la fonction verif() afin de changer l'interface.</p>
+</div>
+
+<div class="descr_projets" id="mise">
+<button class="close_button" onclick="closeMise()">X</button>
+<h3>Mise en page d'un cours</h3>
+<img src='image\word.png' alt='word' height="500px">
+<p>&emsp;Ce programme python utilise les modules docx et docx.shared qui permettent de récupérer, modifier et enregistrer des documents au format
+ word.
+ </br></br>&emsp;Le script commence par récupérer l'entièreté du texte présent dans le word donné en paramètre.
+ </br>&emsp;Ensuite, il parcours paragraphe par paragraphe le doucment.
+ </br>&emsp;Si le paragraphe commence par "T,", alors le script met tout le paragraphe sous forme de titre avec une police plus grande.
+ </br>&emsp;S'il commence par "H1,", le paragraphe devient un sous-titre de niveau 1. De même pour "H2," mais avec un sous titre de niveau 2.
+ </br>&emsp;Si les premiers caractères sont "O," alors le paragraphe prend la forme de liste de puces.
+ </br>&emsp;Et enfin, si rien de tout cela n'est aperçu, le paragraphe reste un paragraphe classique.
+ </br>&emsp;Pour finir, le programme enregistre toutes les modifications.</p>
+</div>
+
+<div class="descr_projets" id="racer">
+<button class="close_button" onclick="closeRacer()">X</button>
+<h3>Traffic racer</h3>
+<img src='image\traffic-racer.jpg' alt='traffic racer' height="500px">
+<p>EN COURS</p>
+</div>
+
+<div class="descr_projets" id="site-projets">
+<button class="close_button" onclick="closeSite()">X</button>
+<h3>Site qui référence mes principaux projets</h3>
+<img src='image\site-projets.png' alt='site' height="500px">
+<p>EN COURS</p>
+</div>
+
+<div class="descr_projets" id="jeu">
+<button class="close_button" onclick="closeJeu()">X</button>
+<h3></h3>
+<img src='image\jeu.png' alt='jeu' height="500px">
+<p>EN COURS</p>
+</div>
+
+<div class="descr_projets" id="lebonangle">
+<button class="close_button" onclick="closeLebonangle()">X</button>
+<h3>LeBonAngle</h3>
+<img src='image\lebonangle.png' alt='site' height="500px">
+<p>EN COURS</p>
+</div>
+
+<h1>Mes différents projets</h1>
+
+<h2 id="python"><br/><br/><br/>En Python</h2>
+
+<section>
+<button class="projets" onclick="openMorpion()">
+<img src='image\morpion.jpg' alt='morpion' height="250px">
+<h3>Morpion</h3>
+</button>
+</section>
+
+<section>
+<button class="projets" onclick="openP4()">
+<img src='image\p4.png' alt='puissance4' height="250px">
+<h3>Puissance 4</h3>
+</button>
+</section>
+
+<section>
+<button class="projets" onclick="openSimon()">
+<img src='image\simon.png' alt='simon' height="250px">
+<h3>Simon</h3>
+</button>
+</section>
+
+<section>
+<button class="projets_encours" onclick="openBanque()">
+<img src='image\banque.jpg' alt='banque' height="250px">
+<h3>Banque</h3>
+<p>(en cours)</p>
+</button>
+</section>
+
+<section>
+<button class="projets" onclick="openMdp()">
+<img src='image\mdp1.jpg' alt='cadenas' height="250px">
+<h3>Sécurité d'un mot de passe</h3>
+</button>
+</section>
+
+<section>
+<button class="projets" onclick="open2048()">
+<img src='image\2048.png' alt='2048' height="250px">
+<h3>2048</h3>
+</button>
+</section>
+
+<section>
+<button class="projets" onclick="openMise()">
+<img src='image\word.png' alt='word' height="250px">
+<h3>Mise en page</h3>
+</button>
+</section>
+
+<h2 id="unity"><br/><br/><br/>Sur Unity</h2>
+
+<section> 
+<button class="projets" onclick="openRpg()">
+<img src='image\rpg.png' alt='rpg' height="250px">
+<h3>RPG</h3>
+</button>
+</section>
+
+<section> 
+<button class="projets_encours" onclick="openRpg2()">
+<img src='image\rpg2.png' alt='rpg' height="250px">
+<h3>RPG 2</h3>
+<p>(en cours)</p>
+</button>
+</section>
+
+<section> 
+<button class="projets" onclick="openRacer()">
+<img src='image\racer.png' alt='racer' height="250px">
+<h3>Traffic Racer</h3>
+</button>
+</section>
+
+<section> 
+<button class="projets_encours" onclick="openJeu()">
+<img src='image\jeu1.png' alt='jeu' height="250px">
+<h3></h3>
+<p>(en cours)</p>
+</button>
+</section>
+
+<h2 id="sql"></br><br/><br/>En SQL</h2>
+
+<section>
+<button class="projets_encours" onclick="openBanque()">
+<img src='image\banque.jpg' alt='banque' height="250px">
+<h3>Banque</h3>
+<p>(en cours)</p>
+</button>
+</section>
+
+<h2 id="html"></br><br/><br/>En PHP / HTML / CSS / Java script</h2>
+
+<section>
+<button class="projets_encours" onclick="openSite()">
+<img src='image\site-projets.png' alt='site' height="250px">
+<h3>Ce site</h3>
+<p>(en cours)</p>
+</button>
+</section>
+
+<section>
+<button class="projets_encours" onclick="openLebonangle()">
+<img src='image\lebonangle.png' alt='site' height="250px">
+<h3>LeBonAngle</h3>
+<p>(en cours)</p>
+</button>
+</section>
+
+<script src="script.js"></script>
+</body> 
+
+</html>
