@@ -1,6 +1,5 @@
  <!DOCTYPE html> 
-<html lang="fr"> 
-<html> 
+<html lang="fr">  
 
 <head> 
 <meta charset="utf-8"> 
@@ -23,9 +22,9 @@
 <button class="close_button" onclick="closeMorpion()">X</button>
 <h3>Morpion</h3>
 <img src='image\morpion-numworks.png' alt='morpion sur numworks' height="500px">
-<p>&emsp;Ce jeux de morpion est utilisable sur les calculatrices Numworks.
-</br>&emsp;Il utilise le langage python et plus précisement les modules kandinsky et ion qui sont 2 modules déjà disponible sur la calculatrice.
- Le module kandinsky permet de creer l'interface graphique et ion permet de détecter quand une touche est pressée.
+<p>&emsp;Ce jeu de morpion est utilisable sur les calculatrices NumWorks.
+</br>&emsp;Il utilise le langage Python et plus précisément les modules kandinsky et ion qui sont 2 modules déjà disponibles sur la calculatrice.
+ Le module kandinsky permet de créer l'interface graphique et ion permet de détecter quand une touche est pressée.
  </br></br>&emsp;Le script est assez simple et tient en 243 lignes.
  </br>&emsp;Chaque case du morpion a une variable qui est égale à 0 quand elle est libre, cette variable devient 1 quand la case est prise par le
  joueur rouge ou 2 si c'est le joueur bleu qui la prend.
@@ -46,9 +45,9 @@
  </br></br>&emsp;C'est un script de 118 lignes réalisé sur omega IDE.
  </br>&emsp;Le plateau est représenté sous la forme d'un tableau où chaque case est égale à 0 si elle est vide, 1 si elle est prise par le
  joueur bleu et 2 par le joueur rouge.
- </br>&emsp;Au début de la partie, le script regarde si l'une des flèches est apuyée, pour décaller le curseur.
- Si on presse la touche 'OK', le script analyse chaque ligne de la colonne à partant du bas jusqu'à trouver une case vide (s'il y en a une).
- Quand il a trouvé cette case, il actualise le tableau représentant le plateau et met un rectangle de la couleur du joueur grâce à kandinsky.
+ </br>&emsp;Au début de la partie, le script regarde si l'une des flèches est appuyée, pour décaler le curseur.
+ Si on presse la touche 'OK', le script analyse chaque ligne de la colonne en partant du bas jusqu'à trouver une case vide (s'il y en a une).
+ Quand il a trouvé cette case, il met à jour le tableau représentant le plateau et met un rectangle de la couleur du joueur grâce à kandinsky.
  </br>&emsp;Ensuite, le script analyse toutes les possibilités de victoire avec l'état du plateau actuel, si une condition de victoire est
  trouvée, il affiche le gagnant.
  </br>&emsp;Enfin, s'il voit que toutes les cases sont prises, il affiche match nul.</p>
@@ -58,13 +57,13 @@
 <button class="close_button" onclick="closeSimon()">X</button>
 <h3>Simon</h3>
 <img src='image\simon-tkinter.png' alt='simon' height="500px">
-<p>&emsp;Ce projet de simon est une amélioration d'un exercice effectué en NSI qui consisté à faire un simon dans la console en utilisant les files.
+<p>&emsp;Ce projet de simon est une amélioration d'un exercice effectué en NSI qui consistait à faire un Simon dans la console en utilisant les files.
  </br>&emsp;Il utilise les modules tkinter pour creer l'interface et random pour choisir les couleurs aléatoirement.
- </br></br>&emsp;Le script fait 124 lignes avec une partie pour creer le simon sur tkinter et une partie avec les fonctions qui permettent son
+ </br></br>&emsp;Le script fait 124 lignes avec une partie pour créer le Simon sur tkinter et une partie avec les fonctions qui permettent son
  fonctionnement.
  </br>&emsp;Les 4 cases colorées sont des boutons qui appellent une fonction saisie qui permet au script de savoir quelle couleur le joueur a
  sélectionné.
- </br>&emsp;Le programme appelle succesivement une fonction qui fait clignoter les boutons a appuyer contenus dans une file et ajoute une
+ </br>&emsp;Le programme appelle successivement une fonction qui fait clignoter les boutons à appuyer contenus dans une file et ajoute une
  couleur à chaque tour et une fonction qui compare la saisie du joueur avec la suite demandée stockée dans une file.
  </br>&emsp;Enfin, si le joueur commet une erreur, la file se vide et le jeu recommence.</p>
 </div>
@@ -80,17 +79,17 @@
 <button class="close_button" onclick="closeRpg()">X</button>
 <h3>Rpg</h3>
 <img src='image\rpg-unity.png' alt='rpg-unity' height="500px">
-<p>&emsp;Ce jeu est mon tout premier projet sur unity, il m'a permis de prendre en main les différents outils et de comprendre le fonctionnement
+<p>&emsp;Ce jeu est mon tout premier projet sur Unity, il m'a permis de prendre en main les différents outils et de comprendre le fonctionnement
  des moteurs de jeu.
  </br></br>&emsp;Le jeu est composé de 2 scènes différentes, une scène pour lancer le jeu et le jeu.
  </br>&emsp;La scène de lancement est assez simple avec un bouton pour lancer la partie et un bouton pour quitter.
- </br></br>&emsp;La scène de jeu est composée de différentes choses, il y a des props qui ont tous une boite de collision et une zone de détection un
+ </br></br>&emsp;La scène de jeu est composée de différentes choses, il y a des props qui ont tous une boîte de collision et une zone de détection un
  peu plus bas que l'objet en lui-même afin d'adapter le layer du personnage pour qu'il soit devant ou derrière l'objet.
- </br>&emsp;La scène a également un menu pause que l'on peut ouvrir en apuyant sur échap, cela permet d'arrêter le temps.
- </br>&emsp;Le joueur dispose d'un inventaire qu'il peut ouvrir en appyant sur "E". Il fonctionne avec une liste qui stocke des scriptable objects
+ </br>&emsp;La scène a également un menu pause que l'on peut ouvrir en appuyant sur échap, cela permet d'arrêter le temps.
+ </br>&emsp;Le joueur dispose d'un inventaire qu'il peut ouvrir en appuyant sur "E". Il fonctionne avec une liste qui stocke des scriptable objects
  "items" qui ont un id, un nom, une description et une image afin que le joueur puisse voir son inventaire.
- </br>&emsp;Sur la carte, il y a également un pnj qui permet de récupérer une quête, quand le joueur s'approche de lui, une boite de dialogue
- apparait et demande au joueur d'aller ouvrir le coffre. La quête se met donc dans la liste des quêtes en cours que l'on peut voir en haut à
+ </br>&emsp;Sur la carte, il y a également un PNJ qui permet de récupérer une quête, quand le joueur s'approche de lui, une boite de dialogue
+ apparaît et demande au joueur d'aller ouvrir le coffre. La quête se met donc dans la liste des quêtes en cours que l'on peut voir en haut à
  gauche de l'image.
  </br>&emsp;Une fois à côté du coffre, le joueur peut faire un clic droit ce qui va permettre d'ouvrir le coffre. Un diamant va alors arriver dans
  l'inventaire du joueur.
@@ -122,12 +121,12 @@
 <p>&emsp;Ce 2048 a été réalisé en python à l'aide du module tkinter qui permet de créer une interface graphique.
 </br></br>&emsp;Le script du jeu fait 172 lignes avec tout d'abord, la création de l'interface, puis l'initialisation des variables nécessaires
  et enfin les fonctions qui permettent le fonctionnement du jeu.
- </br>&emsp;La création de l'interface ce fait avec des rectangles noirs qui permettent de délimiter les cases.
+ </br>&emsp;La création de l'interface se fait avec des rectangles noirs qui permettent de délimiter les cases.
  </br>&emsp;Un tableau ne contenant que des 'None' est créé pour représenter les cases du jeu.
  </br>&emsp;Ensuite, viennent les fonctions, la première est spawn() qui permet de mettre un bloc 2 sur une case vide aléatoirement.
- </br>&emsp;La seconde est verif() qui met les bonnes images de bloc grâce aux valeurs contenues dans la tableau.
+ </br>&emsp;La seconde est verif() qui met les bonnes images de bloc grâce aux valeurs contenues dans le tableau.
  </br>&emsp;Les 4 suivantes permettent de déplacer les blocs quand l'utilisateur appuie sur les flèches, elles changent les valeurs du tableau
- en fonction des places disponibles, elles regardent si 2 blocs de la même valeur se retrouve à côté afin de les transformer en 1 bloc supérieur
+ en fonction des places disponibles, elles regardent si 2 blocs de la même valeur se retrouvent à côté afin de les transformer en 1 bloc supérieur
  et enfin, elles appellent la fonction verif() afin de changer l'interface.</p>
 </div>
 
@@ -138,9 +137,9 @@
 <p>&emsp;Ce programme python utilise les modules docx et docx.shared qui permettent de récupérer, modifier et enregistrer des documents au format
  word.
  </br></br>&emsp;Le script commence par récupérer l'entièreté du texte présent dans le word donné en paramètre.
- </br>&emsp;Ensuite, il parcours paragraphe par paragraphe le doucment.
+ </br>&emsp;Ensuite, il parcourt paragraphe par paragraphe le document.
  </br>&emsp;Si le paragraphe commence par "T,", alors le script met tout le paragraphe sous forme de titre avec une police plus grande.
- </br>&emsp;S'il commence par "H1,", le paragraphe devient un sous-titre de niveau 1. De même pour "H2," mais avec un sous titre de niveau 2.
+ </br>&emsp;S'il commence par "H1,", le paragraphe devient un sous-titre de niveau 1. De même pour "H2," mais avec un sous-titre de niveau 2.
  </br>&emsp;Si les premiers caractères sont "O," alors le paragraphe prend la forme de liste de puces.
  </br>&emsp;Et enfin, si rien de tout cela n'est aperçu, le paragraphe reste un paragraphe classique.
  </br>&emsp;Pour finir, le programme enregistre toutes les modifications.</p>
@@ -278,7 +277,7 @@
 </button>
 </section>
 
-<h2 id="html"></br><br/><br/>En PHP / HTML / CSS / Java script</h2>
+<h2 id="html"></br><br/><br/>En PHP / HTML / CSS / JavaScript</h2>
 
 <section>
 <button class="projets_encours" onclick="openSite()">
@@ -301,3 +300,4 @@
 
 
 </html>
+
